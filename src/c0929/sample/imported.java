@@ -1,6 +1,6 @@
 package c0929.sample;
 
-public class impored {
+public class imported {
     static public String getText(){
         return "static method";
     }
