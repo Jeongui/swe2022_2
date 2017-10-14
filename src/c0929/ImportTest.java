@@ -1,16 +1,13 @@
 package c0929;
 
-public class ImportTest {
-    package lesson4;
+import c0929.sample.imported;
+import c0929.StaticInnerClass.Class2.Class2Class1;
 
-    import lesson4.sample.Imported;
-    import lesson4.StaticInnerClass.Class2.Class2Class1;
-    public class ImportTest {
+public class ImportTest {
        static public void main(String[] arg) {
-           System.out.println(lesson4.sample.Imported.getText());
-           System.out.println(Imported.getText());
+           System.out.println(c0929.sample.imported.getText());
+           System.out.println(imported.getText());
            StaticInnerClass.Class2 c = new StaticInnerClass.Class2();
            Class2Class1 c2 = new Class2Class1();
        }
     }
-}

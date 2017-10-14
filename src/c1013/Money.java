@@ -17,7 +17,7 @@ public class Money{
 
     }
 
-    public int getMoney(Currnecy Currency) {
+    public int getMoney(Currency Currency) {
         return currency.changeMoney(this.currency, this.quantity);
     }
 }

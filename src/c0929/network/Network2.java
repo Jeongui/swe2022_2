@@ -1,4 +1,4 @@
-package c0929;
+package c0929.network;
 
 import java.util.ArrayList;
 
@@ -23,11 +23,11 @@ public class Network2 {
     private ArrayList<Member> members = new ArrayList<>();
 
     public Member enroll(String name){
-        Member newMember = new Member(name);
+        Member newMember = new Member(this, name);
         members.add(newMember);
         return newMember;
     }
     public void unenroll(Member member){
-        member.remove(member);
+        members.remove(member);
     }
 }

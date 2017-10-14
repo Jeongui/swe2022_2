@@ -1,7 +1,8 @@
 package c1013;
 
+import c0915.Array;
+
 import java.util.Arrays;
-import java.util.EnumMap;
 
 public class Main {
     static public void main(String[] arg){

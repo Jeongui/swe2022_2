@@ -15,19 +15,22 @@ public class Network {
             this.friends = new ArrayList<>();
         }
         public void leave(){
-            members.remove(this);
+            unenroll(this);
+        }
+        public boolean belongsTo(Network n){
+            return n == Network.this;
         }
     }
     //Network
-    private ArrayList<Member> members = new ArrayList<>():
+    private ArrayList<Member> members = new ArrayList<>();
 
     public Member enroll(String name){
-        //this == new Network() == net1 == newMember.puter
-        Member newMember = new Member(name);
+        //this == new Network() == net1 == newMember.outer
+        Member newMember = this.new Member(name);
         members.add(newMember);
         return newMember;
     }
-    public void remove(Member member){
+    public void unenroll(Member member){
         members.remove(member);
     }
 }

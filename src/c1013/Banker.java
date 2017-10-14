@@ -5,7 +5,7 @@ public class Banker {
         Account account = req.getDepositAccount();
         if(!account.isDepositable()) return false;
         Money money = req.getMoney();
-        if(Banker.isMinimum_imit(money)) return false;
+        if(Banker.isMinimumLimit(money)) return false;
         return true;
     }
     public static final Money MINIMUM = new Money(Currency.WON, 100);
